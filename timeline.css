@@ -1,0 +1,140 @@
+/*!
+ * Timeline
+ * Version: 0.0.1
+ *
+ * Copyright 2019 Cristiano Ávila Salomão
+ */
+.timeline-main:before{
+    content: '';
+    background-color: #e7e7e7;
+    height: 100%;
+    width: 15px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 0;
+	margin: 15px 0;
+}
+.timeline-main:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.timeline-main .timeline-entry-inner:first-child {
+	margin-top: 35px;
+}
+.timeline-main .timeline-entry-inner {
+	width: 50%;
+	padding: 0 0 0 25px;
+	margin: 0 0 30px 10px;
+	float: right;
+	position: relative;
+}
+.timeline-main .timeline-entry-inner .timeline-time {
+	position: absolute;
+	left: -50%;
+	width: 50%;
+	text-align: right;
+	padding: 0 45px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.timeline-main .timeline-entry-inner .timeline-time > span:first-child {
+	font-size: 15px;
+	font-weight: bold;
+}
+.timeline-main .timeline-entry-inner .timeline-time > span {
+	display: block;
+}
+.timeline-main .timeline-entry-inner .timeline-icon {
+    background: #fff;
+	color: #737881;
+	display: block;
+	width: 40px;
+	height: 40px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	-moz-box-shadow: 0 0 0 5px #EEE;
+	-webkit-box-shadow: 0 0 0 5px #EEE;
+	box-shadow: 0 0 0 5px #EEE;
+	line-height: 40px;
+	font-size: 15px;
+	left: -20px;
+	position: absolute;
+}
+.timeline-main .timeline-entry-inner .timeline-label {
+	position: relative;
+	background: #EEE;
+	padding: 1.7em;
+	margin-left: 20px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.timeline-main .timeline-entry-inner .timeline-label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 9px 9px 0;
+	border-color: transparent #EEE transparent transparent;
+	left: 0;
+	top: 10px;
+	margin-left: -9px;
+}
+.timeline-main .timeline-entry-inner .timeline-label p {
+	color: #737881;
+	font-family: "Noto Sans",sans-serif;
+	font-size: 12px;
+	margin: 0;
+	line-height: 1.428571429;
+}
+.timeline-main .timeline-entry-inner:nth-child(2n+2) {
+	float: left;
+}
+.timeline-main .timeline-entry-inner:nth-child(2n+2) .timeline-time {
+	left: 100%;
+	text-align: left;
+	padding: 0 0 0 45px;
+}
+.timeline-main .timeline-entry-inner:nth-child(2n+2) .timeline-icon {
+	left: calc(100% - 30px);
+}
+.timeline-main .timeline-entry-inner:nth-child(2n+2) .timeline-label {
+	margin-left: 0;
+	margin-right: 55px;
+	text-align: right;
+}
+.timeline-main .timeline-entry-inner:nth-child(2n+2) .timeline-label:after {
+	border-width: 9px 0 9px 9px;
+	border-color: transparent transparent transparent #EEE;
+	left: calc(100% + 9px);
+}
+.timeline-main .timeline-entry-inner .bg-success {
+	background-color: #00a651 !important;
+	color: #fff !important;
+}
+.timeline-main .timeline-entry-inner .bg-danger {
+	background-color: #cc2424 !important;
+	color: #fff !important;
+}
+.timeline-main .timeline-entry-inner .bg-warning {
+	background-color: #fad839 !important;
+	color: #fff !important;
+}
+.timeline-main .timeline-entry-inner .bg-primary {
+	background-color: #21a9e1 !important;
+	color: #fff !important;
+}
